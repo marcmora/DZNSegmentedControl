@@ -375,7 +375,8 @@
     
     do {
         // Creates a new font instance with the current font size
-        UIFont *font = [UIFont fontWithName:self.font.fontName size:fontSize];
+        UIFont *font = [UIFont systemFontOfSize:fontSize]
+//        UIFont *font = [UIFont fontWithName:self.font.fontName size:fontSize];
         
         CGRect textRect = [title boundingRectWithSize:constraintSize options:0 attributes:@{NSFontAttributeName:font} context:nil];
         
