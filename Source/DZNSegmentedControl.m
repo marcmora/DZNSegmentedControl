@@ -703,8 +703,8 @@
             
             CGFloat fontSizeForTitle = [self appropriateFontSizeForTitle:title];
             
-            [attributedString addAttribute:NSFontAttributeName value:[UIFont fontWithName:self.font.fontName size:19.0f] range:[string rangeOfString:count]];
-            [attributedString addAttribute:NSFontAttributeName value:[UIFont fontWithName:self.font.fontName size:fontSizeForTitle] range:[string rangeOfString:title]];
+            [attributedString addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:19.0f] range:[string rangeOfString:count]];
+            [attributedString addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:fontSizeForTitle] range:[string rangeOfString:title]];
             
             if (state == UIControlStateNormal) {
                 
